@@ -46,7 +46,7 @@ cd api
 
 For Mac and Linux
 python3 -m venv venv
-$ source venv/bin/activate
+source venv/bin/activate
 pip install flask python-dotenv
 touch api.py 
 
@@ -63,7 +63,7 @@ Replace the "scripts" key with this:
 
   "scripts": {
     "start": "react-scripts start",
-    "start-api": "cd api && flask run",
+    "start-api": "cd api && venv/bin/flask run",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
