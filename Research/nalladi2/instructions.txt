@@ -1,0 +1,86 @@
+Task:
+
+------------
+
+Your job for Sprint 1 is to create a website using Flask as the backend and React as the frontend. 
+
+In the website, include the following:
+    Name 
+    Major
+    Hobbies
+    What role you want to take in this project? (frontend, backend, design, etc)
+
+Have fun!
+
+Flask: https://flask.palletsprojects.com/en/1.1.x/quickstart/
+
+React: https://reactjs.org/docs/create-a-new-react-app.html
+
+Combining the two: https://blog.miguelgrinberg.com/post/how-to-create-a-react--flask-project
+
+------------
+
+Instructions:
+
+Visit this link and install Node.js (get the recommended for most users one): https://nodejs.org/en/
+
+Open up a new terminal window.
+
+cd into wherever you want the project (the entire app we are building this semester) to live
+
+Then clone our repo onto your computer
+(You can rename FOLDER_NAME to be whatever you want the folder to be called.)
+
+git clone https://github.com/CS196Illinois/group11-sp21 FOLDER_NAME
+cd FOLDER_NAME
+cd Research
+
+Now, we're in the research folder of the repo, where you guys will be doing tutorials.
+Let's make a React app!
+npx create-react-app YOUR_NET_ID
+cd YOUR_NET_ID
+
+Now, we'll make the backend Flask server
+mkdir api
+cd api
+
+For Mac and Linux
+python3 -m venv venv
+source venv/bin/activate
+pip install flask python-dotenv
+touch api.py 
+
+Find the Research folder on your computer, and open it up
+Then, paste the code in nalladi2/api.py into your api.py
+
+Edit the file to have your intro!
+
+cd ..
+
+Open up the package.json file you see
+
+Replace the "scripts" key with this:
+
+  "scripts": {
+    "start": "react-scripts start",
+    "start-api": "cd api && venv/bin/flask run",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+
+At the end of the file, add the following line:
+
+"proxy": "http://localhost:5000"
+
+Also, add a comma to end of the line before what you just entered
+
+We need to install a library to get data from our Flask server
+
+npm install axios
+
+copy the code from nalladi2/App.js into your App.js
+
+npm start
+
+------------
