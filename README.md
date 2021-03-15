@@ -7,4 +7,4 @@ Team Members: xx19, evanmp2, saransh5, zirun2
 
 Project Manager: tianyun9, nalladi2
 
-Project Description: 
+Project Description:
